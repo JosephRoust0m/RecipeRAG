@@ -29,19 +29,3 @@ Open the `backend` folder in your IDE or terminal and run:
 
 ### 6. Verify the Tables
 Return to pgAdmin, refresh the database, and confirm that 18 tables have been created in the `public` schema.
-
-### Note:
-This repository was built as a group project for a course at McGill, contributors include:
-
-Ralph Azrak
-Karine Ha
-Arthur Huang
-Lince Ketchate
-Logan Ma
-Ayham Nassar
-Janelle Tam
-Bilguun Tegshbayar
-Joseph Roustom
-Ismail Sentissi
-
-However, the Recipe Chatbot was built solely by me (Joseph Roustom).
