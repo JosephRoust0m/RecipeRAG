@@ -1,0 +1,86 @@
+namespace com.ecse428.WaitForDinner.model;
+
+
+class User {
+  String name;
+  unique email;
+  password;
+  Date createdAt;
+  Date token;
+  int userId;
+
+  * -- * PreferenceType;
+  * -- * DietType;
+  * -- * Pantry;
+  1 -- * Folder;
+
+
+}
+
+class Recipe {
+  String steps;
+  String difficulty;
+  int time;
+  int portions;
+  int recipeId;
+
+  * -- * PreferenceType;
+  * -- * DietType;
+  * -- * Folder;
+}
+
+class DietType {
+  String name;
+  int dieId;
+
+  * -- * PreferenceType;
+}
+
+class PreferenceType {
+  String name;
+  int preferenceTypeId;
+}
+
+class Ingredient {
+  String name;
+  int shelfLife;
+  int ingredientId;
+  *--* History;
+}
+
+class Pantry {
+  String name;
+  int pantryId;
+  1--* History;
+}
+
+
+
+class Folder {
+  String folderName;
+  int folderId;
+}
+
+associationClass Need {
+  * Recipe;
+  * Ingredient;
+  int amount;
+  String modifier;
+  int needId;
+}
+
+associationClass UserIngredientPreference {
+  * User;
+  * Ingredient;
+  enum Status {like}
+  Status status;
+  int userIngredientPreferenceId;
+
+}
+
+class History {
+  Boolean has;
+  Date dateAdded;
+  Date expiryDate;
+  int amount;
+}
