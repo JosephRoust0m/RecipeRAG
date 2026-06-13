@@ -1,5 +1,7 @@
 ### Note:
-This repository was built as a group project for a course at McGill, contributors include:
+This repository was built as a group project for a course at McGill.
+
+### Contributors include:
 
 - Ralph Azrak  
 - Karine Ha  
